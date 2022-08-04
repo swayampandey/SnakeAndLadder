@@ -6,7 +6,7 @@ public class SnakeAndLadder {
 	 * that is 100 
 	 * 
 	 */
-
+		static final int WinningPosition = 100;
 
 	public static void main(String[] args) {
 		
@@ -14,7 +14,7 @@ public class SnakeAndLadder {
 			int roll = (int)(Math.random()*(6-1))+1;
 			System.out.println("Number after rolling die: " + roll);
 			
-			while(position < 100) {
+			while(position < WinningPosition) {
 				
 				int option = (int)(Math.random() * 10 ) % 3;
 				System.out.println("Option : "+option);
