@@ -2,15 +2,14 @@ package com.bridgelabz;
 
 public class SnakeAndLadder {
 	/**
-	 * UC-4 --> Repeating till player reaches winning position
-	 * that is 100 
+	 * UC-6 --> Number of time dice rolled to win the game 
 	 * 
 	 */
 		static final int WinningPosition = 100;
 
 	public static void main(String[] args) {
 		
-			int position = 0;
+			int position = 0, role = 0;
 			int roll = (int)(Math.random()*(6-1))+1;
 			System.out.println("Number after rolling die: " + roll);
 			
@@ -32,10 +31,12 @@ public class SnakeAndLadder {
 				default:
 					System.out.println("No Play!!");
 				}
+				role++;
 				System.out.println("Position of the Single player: " + position);
 
 			}
-
+			System.out.println(" \n Player wins the game!!!");
+			System.out.println(" \n Number of roles to win: " + role);
 	}
 
 }
